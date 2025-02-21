@@ -21,12 +21,12 @@ JP /0050 ; vai para o processo de armazenamento
 RS /0010
 
 @ /0050
-LD /088 
-MEMORIA MM /102 
-LD MEMORIA 
-AD /082  
-MM MEMORIA 
-JP /012 
+LD /088             ; carrega o valor da soma
+MEMORIA MM /102     ; coloca na memoria 
+LD MEMORIA          ; carrega o valor numerico de MEMORIA
+AD /082             ; soma 2 
+MM MEMORIA          ; atualiza o valor de MEMORIA
+JP /012             ; jump pro inicio do loop
 
 @ /080
 K =1 ; Constante = 1 0080
