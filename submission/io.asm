@@ -30,7 +30,7 @@ JP /042
 LD /200   ; carrega soma
 AD TEMP   ; soma 3030
 MM /156
-PD /0001  ; tentativa de imprimir no terminal  
+PD /100  ; tentativa de imprimir no terminal  
 MM /0060 
 HM /0000
 
