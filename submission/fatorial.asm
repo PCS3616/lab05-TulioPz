@@ -1,6 +1,6 @@
 @ /0100
-N K /0100
-RES K 
+N K =1
+RES K =1
 
 @ /0000
 LD N ; Coleta da memoria 0100
