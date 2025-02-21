@@ -29,7 +29,7 @@ PD /0001  ; tentativa de imprimir no terminal
 MM /060   
 HM /0000
 
-@ /0100
+@ /0400
 TEMP K /3030
 VERIFICADOR K /0A00
 SUBTRAICORRETOR K /000A
