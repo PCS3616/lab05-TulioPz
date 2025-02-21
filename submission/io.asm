@@ -9,20 +9,21 @@ MM /104 ; valor de y
 
 AD /102 ; soma x e y
 MM /200
+MM /10E
 ML SHIFT ; fica na forma 0X 00, sendo x o algarismo menos significativo
 MM /10A ; depuracacao
 SB VERIFICADOR ; verifica se a soma dos menos significativos eh >= A
 MM /10C ; depuracao
-JN /050 ; caso negativo
-JP /040 ; caso positivo
+JN /040 ; caso negativo
+JP /050 ; caso positivo
 
-@ /0040
+@ /0050
 LD /200
 SB SUBTRAICORRETOR
 AD SOMACORRETOR
-JP /050
+JP /042
 
-@ /0050
+@ /0040
 LD /200   ; carrega soma
 AD TEMP   ; soma 3030
 PD /0001  ; tentativa de imprimir no terminal
